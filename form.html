@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rrr.css">
+    <title>Payment-Form</title>
+    
+    <!-- Style-tag also use for internal styling
+    <style>
+        h2{
+            color: blueviolet;
+        }
+    </style> -->
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <!-- style-Tag use for inline style process -->
+        <!-- <h1 style="color: cyan;">Payment Form</h1> -->
+        <h1 class="main_heading">Payment Form</h1>
+        <h2>Contact Information</h2>
+
+
+        <!-- input-Tag is use for data get by user  -->
+
+
+        <!-- In input Tag Type is like text,pass,number -->
+
+
+        <!-- in Input tag required means the data from user required without data it not be perform any action  -->
+
+        <p>Name: <input type="text" name="name" value="Enter name" required></p>
+
+<!-- Fieldset-Tag is use for the square for that perticular field -->
+
+<!-- Legend-Tag is use for heading of that field -->
+
+        <fieldset> <legend>Gender</legend>
+    
+    
+            <!-- input type is ratio intaht type both name should be same -->
+
+
+         <p>Male: <input type="radio" name="gender">
+            Female: <input type="radio" name="gender">
+         </p>
+    </fieldset>
+
+<!-- Textarea-Tag is use for wrriting a text with size  -->
+
+
+    <p>Address: <textarea name="address" id=""  cols="100" rows="10" value="Enter address" required></textarea></p>
+    <p>Email: <input type="email" name="email" id="" value="Enter mail" required></p>
+    <p>Pincode: <input type="number" name="pincode" id="" value="Enter Pimcode" required></p>
+    <h2>Payment Information</h2>
+
+    <!-- Select-Tag is use for select the dropdown   -->
+
+    <!-- Option-Tag is use for options present in select tag -->
+
+     
+    <p>Card_Type: <select name="Card_Type" id="">
+       <option value="">---Select Card_Type----</option>
+       <option value="visa">visa</option> 
+       <option value="mastercard">mastercard</option>
+       <option value="rupee">rupee</option></select></p>
+
+       <p>Card_number: <input type="number" name="number" id="Card_number" value="Enter Card Number" required></p>
+       <p>Expiration_date : <input type="date" name="exp_date" id="exp_date" ></p>
+       <p>cvv <input type="password" name="cvv" id="cvv" value="Enter CVV" required></p>
+
+       <!-- type-is to submite & value-to display the text -->
+
+       <input type="submit" value="Pay now">
+    </form>
+</div>
+</body>
+</html>
